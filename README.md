@@ -28,7 +28,7 @@ Currently, the setup includes:
 
 `yarn watch`
 
-should be run duringdevelopment and will listen for changes in the `./src/styles/` and `./src/js/` directories. The SCSS files will compile down to `./dist/styles/app.css` and the scripts/modules will be combined and stored as `./dist/js/app.js` and transpiled with Babel to `es-2015` presets
+should be run during development and will listen for changes in the `./src/styles/` and `./src/js/` directories. The SCSS files will compile down to `./dist/styles/app.css` and the scripts/modules will be combined and stored as `./dist/js/app.js` and transpiled with Babel to `es-2015` presets
 
 #### build
 `yarn build`
@@ -48,7 +48,7 @@ will only run the Mocha tests
 
 
 ### ToDo
-[ ] Update Docco to support wildcard selectors, `./src/js/**/*` to handle documentation for all modules  
-[ ] Consider test results creation  
-[ ] Copy image files from `./images/` into `./dist/images/`  
-[ ] Consider using Webpack to spin up the server versus Atom Live Server. Maybe have that be a separate script to provide the option?
+- [ ] Update Docco to support wildcard selectors, `./src/js/**/*` to handle documentation for all modules  
+- [ ] Consider test results creation  
+- [ ] Copy image files from `./images/` into `./dist/images/`  
+- [ ] Consider using Webpack to spin up the server versus Atom Live Server. Maybe have that be a separate script to provide the option?
