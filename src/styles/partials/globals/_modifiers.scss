@@ -1,0 +1,16 @@
+.has-spacer:after {
+  background: $secondaryColor;
+  content: '';
+  display: block;
+  height: 1px;
+  margin: 1.5rem auto;
+  width: 300px;
+}
+
+.is-strong {
+  font-weight: 700;
+}
+
+.is-hidden {
+  display: none;
+}
