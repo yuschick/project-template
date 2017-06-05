@@ -1,4 +1,5 @@
 Thumbs.db
 node_modules
-*./map
+*.map
 .DS_Store
+*.lock
