@@ -28,7 +28,7 @@ Currently, the setup includes:
 
 `yarn watch`
 
-should be run during development and will listen for changes in the `./src/styles/` and `./src/js/` directories. The SCSS files will compile down to `./dist/styles/app.css` and the scripts/modules will be combined and stored as `./dist/js/app.js` and transpiled with Babel to `es-2015` presets. Images will also be copied and optimized from `./src/images/` to `./dist/images/`.
+should be run during development and will listen for changes in the `./src/styles/` and `./src/js/` directories. The SCSS files will compile down to `./dist/styles/app.css` and the scripts/modules will be combined and stored as `./dist/js/app.js` and transpiled with Babel to `es-2015` presets. Images will also be copied from `./src/images/` to `./dist/images/`.
 
 #### build
 `yarn build`
@@ -37,7 +37,7 @@ should be run at checkpoints throughout a project. It will execute the following
  - During `prebuild` any tests will be run with Mocha. Errors will quit the build
  - Run `./dist/styles/app.css` through PostCSS back three browser versions
  - Minify styles and scripts into `app.min.css/js`
- - Run image optimization again from `./src/images/` to `./dist/images/` to ensure all images are present
+ - Run image optimization on all images in `./dist/images/` to ensure all images are present
  - Create documentation in the `./docs/` directory
 
 
