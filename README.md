@@ -48,7 +48,6 @@ will only run the Mocha tests
 
 
 ### ToDo
-- [ ] Consider test results creation  
 - [ ] Consider using Webpack to spin up the server versus Atom Live Server. Maybe have that be a separate script to provide the option?
 - [x] Update Docco to support wildcard selectors, `./src/js/**/*` to handle documentation for all modules  
 - [x] Copy image files from `./src/images/` into `./dist/images/`  
