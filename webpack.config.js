@@ -1,6 +1,6 @@
 var webpack = require('webpack');
 var path = require('path');
-// var BrowserSyncPlugin = require('browser-sync-webpack-plugin');
+var BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 
 module.exports = {
   entry: './src/js/app.js',
@@ -9,14 +9,14 @@ module.exports = {
     path: path.resolve(__dirname, './dist/js/'),
   },
   plugins: [
-    // new BrowserSyncPlugin({
-    //     files: ["public/**/*.js", "public/**/*.css", "public/**/*.html"],
-    //     host: 'localhost',
-    //     port: 3000,
-    //     server: {
-    //         baseDir: ['public']
-    //     }
-    // })
+    new BrowserSyncPlugin({
+      files: ["src/**/*.js", "src/**/*.css", "./**/*.html"],
+      host: 'localhost',
+      port: 3000,
+      server: {
+        baseDir: ['./']
+      }
+    })
   ],
   module: {
     loaders: [{
