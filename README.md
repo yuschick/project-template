@@ -25,7 +25,9 @@ Currently, the setup includes:
 ### Script Documentation
 #### watch
 
-`yarn watch`
+```
+yarn watch
+```
 
 should be run during development. It will:  
 - Spin up a local server and live reload on changes
@@ -36,7 +38,9 @@ should be run during development. It will:
 - Images will also be copied from `./src/images/` to `./dist/images/`
 
 #### build
-`yarn build`
+```
+yarn build
+```
 
 should be run at checkpoints throughout a project. It will execute the following:
  - During `prebuild` any tests will be run with Mocha. Errors will quit the build
@@ -47,12 +51,15 @@ should be run at checkpoints throughout a project. It will execute the following
 
 
 #### test
-`yarn test`
+```
+yarn test
+```
 
 will only run the Mocha tests
 
 
 ### ToDo
+- [x] Include localStorage module in `util.js` by default
 - [x] Consider using Webpack to spin up the server versus Atom Live Server. Maybe have that be a separate script to provide the option?
 - [x] Update Docco to support wildcard selectors, `./src/js/**/*` to handle documentation for all modules  
 - [x] Copy image files from `./src/images/` into `./dist/images/`  
