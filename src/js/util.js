@@ -1,8 +1,17 @@
-// util.js serves as a utility library for common functionality
-// Methods here should be scalable and flexible to reuse easily
-
 module.exports = {
-  example() {
-    console.log('example');
+  localStorage: {
+    set(prop, value) {
+      localStorage.setItem(prop, JSON.stringify(value));
+    },
+    get(prop) {
+      let data = localStorage[prop] === undefined ?
+        false :
+        JSON.parse(localStorage[prop]);
+      return data;
+    },
+    clear(prop) {
+      localStorage.removeItem(prop);
+      console.log(`${prop} cleared from localStorage.`);
+    }
   }
 }

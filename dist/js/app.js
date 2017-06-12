@@ -51,21 +51,28 @@
 	(function () {
 	  "use strict";
 
-	  util.example();
+	  var ls = util.localStorage;
 	})();
 
 /***/ }),
 /* 1 */
 /***/ (function(module, exports) {
 
-	'use strict';
-
-	// util.js serves as a utility library for common functionality
-	// Methods here should be scalable and flexible to reuse easily
+	"use strict";
 
 	module.exports = {
-	  example: function example() {
-	    console.log('example');
+	  localStorage: {
+	    set: function set(prop, value) {
+	      localStorage.setItem(prop, JSON.stringify(value));
+	    },
+	    get: function get(prop) {
+	      var data = localStorage[prop] === undefined ? false : JSON.parse(localStorage[prop]);
+	      return data;
+	    },
+	    clear: function clear(prop) {
+	      localStorage.removeItem(prop);
+	      console.log(prop + " cleared from localStorage.");
+	    }
 	  }
 	};
 
