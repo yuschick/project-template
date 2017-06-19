@@ -6,25 +6,25 @@ module.exports = {
   entry: './src/js/app.js',
   output: {
     filename: 'app.js',
-    path: path.resolve(__dirname, './dist/js/'),
+    path: path.resolve(__dirname, './dist/js/')
   },
-  plugins: [
-    new BrowserSyncPlugin({
-      files: ["src/**/*.js", "src/**/*.css", "./**/*.html"],
-      host: 'localhost',
-      port: 3000,
-      server: {
-        baseDir: ['./']
-      }
-    })
-  ],
+  plugins: [new BrowserSyncPlugin({
+    files: [
+      "./dist/**/*.js", "./**/*.html", "./dist/styles/*.css"
+    ],
+    host: 'localhost',
+    port: 3000,
+    server: {
+      baseDir: ['./']
+    }
+  })],
   module: {
     loaders: [{
       test: /\.js$/,
       exclude: /node_modules/,
       loader: 'babel-loader',
       query: {
-        presets: ['es2015'],
+        presets: ['es2015']
       }
     }]
   }
