@@ -35,7 +35,6 @@ should be run during development. It will:
 - The SCSS files will compile down to `./dist/styles/app.css`
 - The scripts/modules will be combined and stored as `./dist/js/app.js`
 - Then transpiled with Babel to `es-2015` presets
-- Images will also be copied from `./src/images/` to `./dist/images/`
 
 #### build
 ```
@@ -46,7 +45,7 @@ should be run at checkpoints throughout a project. It will execute the following
  - During `prebuild` any tests will be run with Mocha. Errors will quit the build
  - Run `./dist/styles/app.css` through PostCSS back three browser versions
  - Minify styles and scripts into `app.min.css/js`
- - Run image optimization on all images in `./dist/images/` to ensure all images are present
+ - Run image optimization on all images in `./src/images/` and output to `./dist/images/`
  - Create documentation in the `./docs/` directory
 
 
