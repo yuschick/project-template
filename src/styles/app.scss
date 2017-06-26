@@ -1,4 +1,15 @@
-@import 'partials/globals/variables';
-@import 'partials/globals/reset';
-@import 'partials/globals/mixins';
-@import 'partials/globals/modifiers';
+@import 'settings.sizes';
+@import 'settings.colors';
+@import 'settings.fonts';
+@import 'tools.mixins';
+@import 'generic.reset';
+/*
+@import "elements.headings";
+@import "elements.links";
+@import "objects.wrappers";
+@import "objects.grid";
+@import "components.site-nav";
+@import "components.buttons";
+@import "components.carousel";
+*/
+@import 'util.modifiers';
